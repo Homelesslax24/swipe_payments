@@ -25,6 +25,8 @@ gem 'bootstrap-sass'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Enable secure credential management
 gem 'figaro'
+# Add letter opener to handle mail in development
+gem "letter_opener", :group => :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -46,9 +48,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
-  # Add letter opener to handle mail in development
-  gem 'letter_opener'
  end
 
 group :production do
